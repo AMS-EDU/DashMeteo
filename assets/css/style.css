@@ -259,15 +259,35 @@ body {
   border-radius: var(--radius-pill);
 }
 
+.btn-primary .span { font-weight: var(--weight-semiBold); }
 
-/* TODO: https://youtu.be/QMwyNnjAils?list=PLdTMPPz0hgh5Gbe3NOf2nwaZsAe5tEUVI&t=1824 */
+.btn-primary[disabled] {
+  background-color: var(--outline);
+  color: var(--on-surface-variant);
+  cursor: not-allowed;
+}
+
+.btn-primary[disabled]::before { display: none; }
 
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
+.search-view, 
+.header .btn-primary .span { display: none; }
 
+.logo img { width: 150px; }
+
+.header .container,
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*TODO: https://youtu.be/QMwyNnjAils?list=PLdTMPPz0hgh5Gbe3NOf2nwaZsAe5tEUVI&t=1942 */
 
 
 

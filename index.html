@@ -47,7 +47,7 @@
                 <img src="./assets/images/logo1.png" width="364" height="58" alt="logo">
             </a>
 
-            <div class="search-view" data-search-view>
+            <div class="search-view active" data-search-view>
                 
                 <div class="search-wrapper">
                     <input type="search" name="search" placeholder="Serach city ..."  autocomplete="off" class="search-field" data-search-field>
@@ -75,22 +75,21 @@
                     </ul>
                 </div>
 
-                <div class="header-actions">
-
-                    <button class="icon-btn has-state" aria-label="open serach" data-search-toggler="">
-                        <span class="m-icon icon">serach</span>
-                    </button>
-
-                    <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
-                        <span class="m-icon">my_location</span>
-
-                        <span class="span">Current Location</span>
-                    </a>
-
-                </div>
-
             </div>
 
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open serach" data-search-toggler>
+                    <span class="m-icon icon">serach</span>
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn disabled>
+                    <span class="m-icon">my_location</span>
+
+                    <span class="span">Current Location</span>
+                </a>
+
+            </div>
             
         </div>
     </header>
